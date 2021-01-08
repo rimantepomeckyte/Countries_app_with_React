@@ -1,38 +1,31 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html{
+    height: 100%;
+    background-color: #d6c1e3 !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.country-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card-img-top{
+    height: 65%;
+    max-width: 100%;
+    object-fit: cover;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.country-card{
+    width: 16rem;
 }
-
-.App-link {
-  color: #61dafb;
+.search-input::placeholder{
+    color: white;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.capital{
+    font-weight: 300;
+    font-size: 16px;
+    margin-top: -10px;
 }
